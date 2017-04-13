@@ -1,6 +1,7 @@
 package com.jpa.example.components;
 
 import com.jpa.example.controller.StudentController;
+import com.jpa.example.controller.TeacherController;
 import io.swagger.jaxrs.config.BeanConfig;
 import io.swagger.jaxrs.listing.ApiListingResource;
 import io.swagger.jaxrs.listing.SwaggerSerializers;
@@ -16,7 +17,8 @@ public class JerseyRegisterCompoment extends ResourceConfig {
     private String apiPath;
 
     public JerseyRegisterCompoment() {
-        register(StudentController.class);
+
+        register(StudentController.class).register(TeacherController.class);
     }
 
     @PostConstruct

@@ -11,10 +11,6 @@ public class Student {
     @Id
     private String id;
     private String classId;
-    private double math;
-    private double english;
-    private double chinese;
-    private double program;
 
     public String getName() {
         return name;
@@ -41,45 +37,11 @@ public class Student {
         this.classId = classId;
     }
 
-    public double getMath() {
-        return math;
-    }
 
-    public void setMath(double math) {
-        this.math = math;
-    }
-
-    public double getEnglish() {
-        return english;
-    }
-
-    public void setEnglish(double english) {
-        this.english = english;
-    }
-
-    public double getChinese() {
-        return chinese;
-    }
-
-    public void setChinese(double chinese) {
-        this.chinese = chinese;
-    }
-
-    public double getProgram() {
-        return program;
-    }
-
-    public void setProgram(double program) {
-        this.program = program;
-    }
     public Student() {}
-    public Student(String name, String stuId, String classId, double math, double english, double chinese, double program) {
+    public Student(String name, String stuId, String classId) {
         this.name = name;
         this.id = stuId;
         this.classId = classId;
-        this.math = math;
-        this.chinese = chinese;
-        this.english = english;
-        this.program = program;
     }
 }
